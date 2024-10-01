@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="center">
+        <div class="container">
+            <div class="image-container">
+                <img src="profile_picture.jpeg" alt="Profile Image">
+            </div>
+            <div class="name">Rujhan Saeful Milah</div>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVvyNRv96i9b_bfeWHJYRDk4wmby94WiFP-g&s" alt="Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img src="https://i.pinimg.com/564x/3c/81/7a/3c817a1285aecd16354408dc4b31d7c5.jpg" alt="Twitter">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img src="https://cdn.icon-icons.com/icons2/2845/PNG/512/instagram_logo_icon_181283.png" alt="Instagram">
+                </a>
+            </div>
+        <div class="left-box">
+            <span class = "clock" id="time"></span>
+            <span>Tanggal Lahir</span>
+            <span>21 Juli 2005</span>
+        </div>
+    </div>
+        
+        
+    </div>
+    
+    
+
+    
+
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString();
+            document.getElementById('time').textContent = timeString;
+        }
+        setInterval(updateTime, 1000);
+    </script>
+    
+</body>
+</html>
